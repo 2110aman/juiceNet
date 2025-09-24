@@ -1,0 +1,7164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Font imports are now handled in aloevera-font.css */
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.nav_bar {
+  width: 100vw;
+  height: 88px;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 24px;
+  transform: rotate(0deg);
+  opacity: 1;
+  border-bottom: 1px;
+  background: white;
+}
+
+.nav_container {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transform: rotate(0deg);
+  opacity: 1;
+  border-bottom: 1px;
+  gap: 32px;
+}
+#logo_container img {
+  width: 162px;
+  height: 56px;
+}
+#logo_container {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 162px;
+  flex-shrink: 0;
+}
+
+#container_holder {
+  display: flex;
+  height: 64px;
+  width: 611px;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 70px; */
+}
+
+.container_item {
+  font-family: "Aloevera Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  transform: rotate(0deg);
+  opacity: 1;
+  color: #082544;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  align-items: center;
+}
+
+.container_item:hover {
+  font-weight: 600;
+}
+.container_item.active {
+  border-bottom: 1px solid #082544;
+  font-weight: 600;
+}
+#home_button {
+  width: 67px;
+  height: 36px;
+  border-bottom-width: 1px;
+  padding: 8px 14px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#features {
+  width: 60px;
+  height: 36px;
+  padding: 8px 14px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about_us {
+  width: 90px;
+  height: 36px;
+  padding: 8px 5px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#partnership {
+  width: 113px;
+  height: 20px;
+  padding: 18px 14px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blog {
+  width: 55px;
+  height: 20px;
+  padding: 18px 14px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#faq {
+  width: 53px;
+  height: 20px;
+  padding: 18px 14px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact_us {
+  width: 113px;
+  height: 20px;
+  padding: 18px 14px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login_cart_button {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 44px;
+  gap: 12px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+#cart_button,
+#login_button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart_button img,
+#login_button img {
+  width: 20.79px;
+  height: 20.79px;
+  transform: rotate(0deg);
+  opacity: 1;
+  position: relative;
+  top: 0.87px;
+  left: 0.11px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.nav_button {
+  width: 234px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.nav_button button {
+  padding: 10px 20px;
+  width: 236px;
+  height: 44px;
+}
+
+#signUpButton {
+  width: 97px;
+  height: 46px;
+  padding: 14px 10px;
+  /* gap: 16px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  border-width: 1px;
+  background-color: white;
+  color: #01ba77;
+  border: 1px solid #01ba77;
+
+  font-family: "Aloevera Display", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#shopNowButton {
+  width: 121px;
+  height: 46px;
+  padding: 14px 12px;
+  transform: rotate(0deg);
+  opacity: 1;
+
+  background-color: #01ba77;
+  color: white;
+
+  font-family: "Aloevera Display", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* hero section styles */
+.hero_section {
+  width: 100vw;
+  height: 780px;
+  transform: rotate(0deg);
+  opacity: 1;
+
+  background: linear-gradient(0deg, #082544, #082544),
+    /* solid dark blue layer */
+      linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 111.46%); /* fade-to-black overlay */
+  position: relative;
+  z-index: 999;
+}
+
+.hero_section_images {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(0deg, #082544, #082544),
+    /* solid dark blue layer */
+      linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 111.46%);
+}
+
+.hero_section_image_left {
+  width: 17%;
+  height: 100%;
+  background: linear-gradient(0deg, #082544, #082544),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 111.46%);
+  object-fit: cover;
+  object-position: left;
+}
+.hero_section_image_left_img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero_section_image_right {
+  width: 83%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.hero_section_image_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* Hero Content */
+.hero_content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.hero_left {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  /* top: 0px; */
+  left: 0px;
+  bottom: 35px;
+}
+
+/* Hero Tagline */
+.hero_tagline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero_tagline_line {
+  width: 40px;
+  height: 1px;
+  background: #01ba77;
+}
+
+.hero_tagline_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  line-height: 16.61px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+/* Hero Headline */
+.hero_headline {
+  width: 731px;
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 60px;
+  font-style: extraLight;
+  font-weight: 200;
+  letter-spacing: -1.5px;
+  line-height: 130%;
+  color: white;
+  margin: 0;
+}
+
+.hero_headline span {
+  font-weight: 700;
+  font-style: bold;
+}
+
+/* Hero Call to Action */
+.hero_cta {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+/* Hero Download Text */
+.hero_download_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: white;
+  margin: 0 0 0 0;
+  text-align: left;
+}
+
+/* Hero Download Buttons */
+.hero_download_buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.download_button_hero {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.app_store_button {
+  width: 181px;
+  height: 60px;
+}
+.google_play_button {
+  width: 199px;
+  height: 60px;
+}
+
+.download_button_hero img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Hero Social Media Icons */
+.hero_social_icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.social_icon_line {
+  width: 1px;
+  height: 40px;
+  background: white;
+  border-top: none;
+}
+.hero_social_icons .social_icon {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero_social_icons .social_icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero_social_icons .social_icon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.hero_section .scroll_icon {
+  padding: 10px 6px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  border-radius: 80px;
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero_section .scroll_icon:hover {
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+.hero_section .scroll_icon img {
+  width: 19px;
+  height: auto;
+  position: relative;
+  animation: scrollAnimation 2s infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* #Frame1707482055 {
+  width: 100%;
+  max-width: 100vw;
+  height: 376px;
+  padding: 40px 80px 60px 80px;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+} */
+
+#Frame1707482114 {
+  width: 100vw;
+  height: 376px;
+  padding: 40px 80px 60px 80px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+/* .container {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  position: relative;
+} */
+
+.stack {
+  width: 90vw;
+  height: 276px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  position: relative;
+}
+
+#stack_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #082544;
+  text-align: center;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#stack_text span {
+  font-family: inherit;
+  font-weight: 700;
+  font-style: inherit;
+  color: #082544;
+}
+
+#stack_frame {
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  gap: 15px;
+  /* padding-left: 22px; */
+  width: 90vw;
+  height: 120px;
+}
+
+.stack_frame_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 27px;
+  padding-top: 10px;
+  gap: 16px;
+  width: 200px;
+  height: 120px;
+  border-bottom: 2px solid #d1d5db;
+}
+.stack_frame_item:hover {
+  border-bottom: 2px solid #01ba77;
+  font-weight: 600;
+}
+.stack_frame_item.active {
+  border-bottom: 2px solid #01ba77;
+  font-weight: 600;
+}
+
+.stack_frame_text_up {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  height: 37px;
+  width: 100%;
+  font-weight: 600;
+  line-height: 120%;
+  color: #082544;
+  text-align: center;
+}
+
+.stack_text_down {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #082544;
+  background: #ffffff;
+  letter-spacing: 0px;
+  text-align: center;
+  /* margin-top: 8px; */
+}
+
+
+
+.stack_frame_text_up {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #082544;
+  text-align: center;
+}
+
+.stack_text_down {
+  height: 16px;
+  width: 100%;
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #082544;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+/* About Us Section */
+#about_section {
+  width: 100vw;
+  height: 682.821533203125px;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  background: #f9fafb;
+}
+
+.about_container {
+  width: 90vw;
+  height: 562.82px;
+  gap: 60px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about_image {
+  width: 525.7294921875px;
+  height: 562.821533203125px;
+}
+
+.about_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  /* border-radius: 8px; */
+}
+
+/* .experience_box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #01ba77;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.experience_number {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.experience_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-top: 4px;
+} */
+
+.about_content {
+  width: 694.2705078125px;
+  height: 464px;
+  gap: 20px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 8px;
+
+  /* margin-bottom: 20px; */
+}
+
+.about_line {
+  width: 32px;
+  height: 2px;
+  margin-top: 6px;
+  background: #01ba77;
+}
+
+.about_title {
+  font-family: "Aloevera Display", sans-serif;
+  height: 16px;
+  width: 71px;
+  font-size: 16px;
+  font-style: medium;
+  font-weight: 500;
+  color: #01ba77;
+  align-items: center;
+  letter-spacing: 0px;
+}
+
+.about_headline {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  height: 116px;
+  width: 694px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #082544;
+  margin-bottom: 10px;
+}
+.about_headline span {
+  font-weight: 700;
+}
+
+.about_description {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  width: 694.7px;
+  height: 66px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #082544;
+  margin-bottom: 40px;
+}
+
+.features_grid_about {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature_box {
+  background: linear-gradient(180deg, #02120c 0%, #067e52 100%);
+  padding: 24px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #6eae2f;
+  transition: all 0.3s ease;
+}
+
+.feature_box:hover {
+  border: 2px solid #01ba77;
+}
+
+.feature_icon_about {
+  font-size: 32px;
+  margin-bottom: 12px;
+  border: 1px solid #01ba77;
+  border-radius: 50%;
+  padding: 10px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature_text_about {
+  font-family: "Aloevera Display", sans-serif;
+  width: 186.09px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+/* Services Section */
+#services_section {
+  width: 100vw;
+  height: 894px;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.services_container {
+  width: 90vw;
+  height: 774px;
+  gap: 40px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* margin-bottom: 20px; */
+}
+
+.services_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+}
+
+.services_title {
+  font-family: "Aloevera Display", sans-serif;
+  height: 16px;
+  width: 58px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #01ba77;
+  letter-spacing: 0%;
+}
+
+.services_headline {
+  font-family: "Aloevera Display", sans-serif;
+  height: 144px;
+  width: 706px;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #082544;
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+.services_headline span {
+  font-weight: 700;
+}
+
+.services_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  width: 90vw;
+  height: 590px;
+}
+
+.service_card {
+  background: #f3f4f6;
+  padding: 32px 24px;
+  /* border-radius: 8px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.service_card:hover {
+  /* transform: translateY(-4px); */
+  background: #01ba77;
+}
+
+.service_card:hover .service_title {
+  color: #ffffff;
+}
+
+.service_card:hover .service_description {
+  color: #ffffff;
+}
+
+.service_card:hover .service_link {
+  color: #ffffff;
+}
+
+.service_card:hover .service_icon img {
+  filter: brightness(0) invert(1);
+}
+
+.commercial_card {
+  background: #f3f4f6;
+}
+
+/* Commercial card icon - green by default, override service card hover */
+.commercial_card .service_icon img,
+.commercial_card.service_card .service_icon img {
+  filter: none !important;
+}
+
+.service_icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.service_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: SemiBold;
+  color: #082544;
+  margin-bottom: 14px;
+  /* transition: color 0.3s ease; */
+}
+
+.commercial_card .service_title {
+  color: #082544;
+}
+
+.service_description {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #6b7280;
+  margin-bottom: 12px;
+  /* transition: color 0.3s ease; */
+}
+
+.commercial_card .service_description {
+  color: #6b7280;
+}
+
+.service_link {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-style: Medium;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #01ba77;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.commercial_card .service_link {
+  color: #01ba77;
+}
+
+/* Commercial card hover effects - more specific */
+.commercial_card:hover .service_icon img,
+.commercial_card.service_card:hover .service_icon img {
+  filter: brightness(0) invert(1) !important;
+}
+
+.service_link:hover {
+  text-decoration: underline;
+}
+
+/* Pricing Section */
+#pricing_section {
+  width: 100vw;
+  height: 770px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  margin: 0 auto;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing_container {
+  width: 1017px;
+  height: 650px;
+  gap: 20px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.pricing_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* margin-bottom: 20px; */
+}
+
+.pricing_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+}
+
+.pricing_title {
+  font-family: "Aloevera Display", sans-serif;
+  height: 16px;
+  width: 80px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #01ba77;
+  letter-spacing: 0%;
+}
+
+.pricing_headline {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  height: 109px;
+  width: 100%;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 120%;
+  color: #082544;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing_headline span {
+  font-weight: 700;
+  font-style: bold;
+}
+
+.pricing_cards {
+  width: 940px;
+  height: 466px;
+  gap: 24px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.pricing_card {
+  flex: 1;
+  height: 466px;
+  padding: 10px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border-radius: 8px; */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Guest card - white background with gradient border (smaller by default) */
+.guest_card {
+  background: #ffffff;
+  border: 2px solid transparent;
+  border-image: linear-gradient(335.82deg, #02120c 0.64%, #01ba77 100.69%) 1;
+  height: 400px;
+  width: 430px;
+  margin-top: 18px;
+  transform: scale(0.95);
+}
+
+/* Host card - green gradient background with gradient border (larger by default) */
+.host_card {
+  background: linear-gradient(335.38deg, #063323 -16.02%, #01ba77 100.68%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(335.82deg, #02120c 0.64%, #01ba77 100.69%) 1;
+  height: 400px;
+  width: 480px;
+  margin-top: 18px;
+  transform: scale(1.05);
+}
+
+/* Host card text styling - white text for green background */
+.host_card .card_title {
+  color: #ffffff;
+}
+
+.host_card .card_price {
+  color: #ffffff;
+}
+
+.host_card .features_title {
+  color: #ffffff;
+}
+
+.host_card .feature_item {
+  color: #ffffff;
+}
+
+.host_card .checkmark img {
+  filter: brightness(0) invert(1);
+}
+
+.host_card .subscribe_button {
+  background: #ffffff;
+  color: #01ba77;
+}
+
+/* Hover effect - only affects the card being hovered */
+.pricing_card:hover {
+  background: linear-gradient(335.38deg, #063323 -16.02%, #01ba77 100.68%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(335.82deg, #02120c 0.64%, #01ba77 100.69%) 1;
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 0 8px 25px rgba(1, 186, 119, 0.25);
+}
+
+/* When guest card is hovered, make host card white and smaller */
+.guest_card:hover ~ .host_card {
+  background: #ffffff;
+  transform: scale(0.97);
+}
+
+.guest_card:hover ~ .host_card .card_title {
+  color: #082544;
+}
+
+.guest_card:hover ~ .host_card .card_price {
+  color: #082544;
+}
+
+.guest_card:hover ~ .host_card .features_title {
+  color: #082544;
+}
+
+.guest_card:hover ~ .host_card .feature_item {
+  color: #6b7280;
+}
+
+.guest_card:hover ~ .host_card .checkmark img {
+  filter: none;
+}
+
+.guest_card:hover ~ .host_card .subscribe_button {
+  background: #01ba77;
+  color: #ffffff;
+}
+
+.pricing_card:hover .card_title {
+  color: #ffffff;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+
+.pricing_card:hover .card_price {
+  color: #ffffff;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+
+.pricing_card:hover .features_title {
+  color: #ffffff;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.pricing_card:hover .feature_item {
+  color: #ffffff;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+}
+
+.pricing_card:hover .checkmark img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.pricing_card:hover .subscribe_button {
+  background: #ffffff;
+  color: #01ba77;
+  transform: scale(1.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.35s;
+}
+
+.pricing_card:hover .card_divider {
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.card_content {
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: medium;
+  color: #082544;
+  letter-spacing: 0%;
+  text-align: center;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.card_price {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: regular;
+  letter-spacing: 0%;
+  color: #082544;
+  margin-bottom: 24px;
+  text-align: center;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  width: 100%;
+}
+
+.card_price span {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  font-style: medium;
+}
+
+.card_divider {
+  width: 100%;
+  height: 1px;
+  background: #d1d5db;
+  margin-bottom: 24px;
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+
+.features_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: regular;
+  color: #6b7280;
+  margin-bottom: 5px;
+  text-align: left;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.card_features {
+  list-style: none;
+  padding: 0;
+  /* margin: 0 0 32px 0; */
+  flex-grow: 1;
+}
+
+.feature_item {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #6b7280;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+  gap: 12px;
+}
+
+.checkmark {
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.checkmark img {
+  filter: none;
+}
+
+.subscribe_button {
+  width: 100%;
+  height: 46px;
+  /* padding: 16px 24px; */
+  border: none;
+  /* border-radius: 4px; */
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.35s;
+  font-style: SemiBold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.subscribe_button {
+  background: #01ba77;
+  color: #ffffff;
+}
+
+.subscribe_button:hover {
+  background: #01ba77;
+}
+
+/* Impact Section */
+#impact_section {
+  width: 100vw;
+  height: 312px;
+  /* padding-top: 60px; */
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.impact_container {
+  width: 1280px;
+  height: 192px;
+  gap: 60px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+/* Left Section - Title */
+.impact_title_section {
+  width: 700px;
+  height: 144px;
+  flex: 1;
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.impact_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.impact_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+}
+
+.impact_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: medium;
+  letter-spacing: 0%;
+  line-height: 16px;
+  color: #01ba77;
+  text-align: left;
+  letter-spacing: 0px;
+}
+
+.impact_headline {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #082544;
+}
+
+.impact_headline span {
+  font-weight: 700;
+}
+
+/* Right Section - Description and Stats */
+.impact_content_section {
+  width: 520px;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.impact_description {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: medium;
+  color: #082544;
+  /* margin-bottom: 8px; */
+}
+
+.impact_stats {
+  display: flex;
+  gap: 24px;
+}
+
+.stat_box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+
+.stat_number {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #082544;
+}
+
+.stat_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #082544;
+}
+
+/* Features Section */
+#features_section {
+  width: 100vw;
+  height: 861px;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  /* gap: 10px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  background: #f9fafb;
+}
+
+.features_container {
+  width: 90vw;
+  height: 741px;
+  /* gap: 12px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+}
+
+/* Header Section */
+
+.features_header {
+  width: 90vw;
+  /* height: 144px; */
+  gap: 12px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.features_header_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+  /* margin-bottom: 12px; */
+}
+
+.features_header_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #01ba77;
+  letter-spacing: 0px;
+  /* margin-bottom: 20px; */
+}
+
+.features_main_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: light;
+  line-height: 120%;
+  color: #082544;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.features_main_title span {
+  font-weight: 700;
+  font-style: bold;
+}
+/* Content Section */
+.features_content {
+  width: 90vw;
+  height: 537px;
+  transform: rotate(0deg);
+  opacity: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* Central Image */
+.features_center_image {
+  /* height: 536.4547729492188px;
+  width: 740px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+}
+
+.features_center_image img {
+  width: 740px;
+  height: 536.4547729492188px;
+  object-fit: contain;
+  /* position: absolute; */
+  /* top: 150px; */
+  /* left: 34px; */
+}
+
+/* Features Grid */
+.features_grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  padding: 60px;
+}
+
+/* Left Side Grid Cards */
+.features_grid .top_left {
+  width: 277.72283935546875px;
+  height: 193px;
+  /* gap: 18px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  position: absolute;
+  bottom: 330px;
+  left: 60px;
+}
+
+.features_grid .bottom_left {
+  width: 303px;
+  height: 193px;
+  /* gap: 18px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  position: absolute;
+  bottom: 70px;
+  left: -50px;
+}
+/* right side Grid Cards */
+.features_grid .top_right {
+  width: 263px;
+  height: 193px;
+  /* gap: 18px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  position: absolute;
+  bottom: 330px;
+  right: 120px;
+}
+.features_grid .bottom_right {
+  width: 257.72283935546875px;
+  height: 193px;
+  /* gap: 18px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+}
+/* Feature Cards */
+.feature_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* padding: 24px; */
+  background: #f9fafb;
+}
+
+.feature_card:hover {
+  /* Removed transform to prevent movement of other elements */
+}
+
+.feature_icon {
+  width: 80px;
+  height: 80px;
+  background: #01ba77;
+  border-radius: 50%;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 16px; */
+}
+
+.feature_icon img {
+  width: 80px;
+  height: 80px;
+  /* object-fit: contain; */
+  /* filter: brightness(0) invert(1); */
+}
+
+.feature_card_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: semiBold;
+  color: #082544;
+  margin-bottom: 12px;
+}
+
+.feature_card_description {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #6b7280;
+}
+
+/* Feature Card Positioning */
+.top_left {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: start;
+}
+
+.top_right {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+.bottom_right {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: end;
+  justify-self: end;
+}
+
+.bottom_left {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+}
+
+/* Mobile App Section */
+#mobile_app_section {
+  width: 100vw;
+  height: 658px;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.mobile_app_container {
+  width: 1280px;
+  height: 538px;
+  justify-content: space-between;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Left Side - Phone Images */
+
+.mobile_app_images {
+  height: 550px;
+  width: 709px;
+  background-image: url("./images/phone (1).png");
+  position: relative;
+  bottom: 10px;
+  left: 40px;
+  z-index: -1;
+}
+
+.mobile_app_images img {
+  width: 700px;
+  height: 550px;
+  object-fit: cover;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+/* Right Side - Content */
+.mobile_app_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 572px;
+  height: 538px;
+}
+
+.mobile_app_header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile_app_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+}
+
+.mobile_app_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: Medium;
+  color: #01ba77;
+  letter-spacing: 0px;
+}
+
+.mobile_app_main_title span {
+  font-weight: 700;
+}
+.mobile_app_main_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  font-style: light;
+  font-weight: 300;
+  line-height: 120%;
+  color: #082544;
+  margin: 0;
+}
+
+.mobile_app_description {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #082544;
+  margin: 0;
+}
+
+/* Features List */
+.mobile_app_features {
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px;   */
+}
+
+.feature_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.feature_checkmark {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.feature_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #334155;
+}
+
+/* Download Buttons */
+.download_buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.download_button_feature {
+  display: flex;
+  align-items: center;
+  /* gap: 18px; */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download_button_feature img {
+  width: 181px;
+  height: 60px;
+  object-fit: fill;
+}
+
+/* EV Charging Products Section */
+#ev_products_section {
+  width: 100vw;
+  height: 882px;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  background: #f9fafb;
+}
+
+.ev_products_container {
+  width: 90vw;
+  height: 762px;
+  /* gap: 40px; */
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.ev_products_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  /* margin-bottom: 20px; */
+}
+
+.ev_products_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+}
+
+.ev_products_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: medium;
+  line-height: 16px;
+  color: #01ba77;
+  letter-spacing: 0px;
+}
+
+/* Main Content */
+.ev_products_content {
+  width: 90vw;
+  height: 636px;
+  gap: 32px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text Section */
+.ev_products_text_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ev_products_main_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #082544;
+  margin: 0;
+}
+
+.ev_products_main_title span {
+  font-weight: 700;
+}
+
+.ev_products_subtitle {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #6b7280;
+  margin: 0;
+  max-width: 600px;
+}
+
+/* Product Cards Container */
+.ev_products_cards {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Product Cards */
+.product_card {
+  flex: 1;
+  max-width: 400px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product_card:hover {
+  /* Removed transform to prevent movement of other elements */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Images */
+.product_image {
+  width: 338px;
+  height: 338px;
+}
+
+/* Product Pricing */
+.product_price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Aloevera Display", sans-serif;
+}
+
+.current_price {
+  font-size: 28px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: medium;
+  color: #292929;
+}
+.price_divider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 157px;
+  height: 24px;
+  gap: 8px;
+}
+
+.original_price {
+  width: 76px;
+  height: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: regular;
+  color: #292929;
+  text-decoration: line-through;
+}
+
+.discount {
+  width: 73px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: regular;
+  color: #292929;
+  /* padding: 2px 8px; */
+  /* border-radius: 4px; */
+}
+
+.product_price_description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product_name_description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Product Names */
+.product_name {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  font-style: SemiBold;
+  color: #082544;
+}
+
+/* Product Descriptions */
+.product_description {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #666666;
+}
+
+/* Product Buttons */
+.product_button {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  background: #01ba77;
+  color: white;
+}
+
+/* Blogs Section */
+#blogs_section {
+  width: 100vw;
+  height: 850px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;
+  padding-top: 60px;
+  padding-right: 80px;
+  /* padding-bottom: 60px; */
+  padding-left: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.blogs_container {
+  width: 1280px;
+  height: 600px;
+  gap: 40px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Upper Section - Header */
+.blogs_header_section {
+  width: 1280px;
+  height: 86px;
+  justify-content: space-between;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogs_header_left {
+  display: flex;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+
+.blogs_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blogs_line {
+  width: 32px;
+  height: 2px;
+  background: #01ba77;
+}
+
+.blogs_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  /* padding-top: 12px; */
+  color: #01ba77;
+  letter-spacing: 0px;
+}
+
+.blogs_main_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #082544;
+  margin: 0;
+}
+
+.blogs_main_title span {
+  font-weight: 700;
+  font-style: bold;
+}
+
+.blogs_header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+.view_all_button {
+  width: 113px;
+  height: 46px;
+  border: 1px solid #01ba77;
+  background: transparent;
+  color: #01ba77;
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 12px;
+  letter-spacing: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view_all_button:hover {
+  background: #01ba77;
+  color: white;
+}
+
+/* Lower Section - Carousel */
+.blogs_carousel_section {
+  width: 1280px;
+  height: 650px;
+  gap: 32px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel_wrapper {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.carousel_track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.9s ease-in-out;
+  height: 100%;
+  gap: 32px;
+}
+
+/* Blog Cards */
+.blog_card {
+  min-width: 405.33px;
+  height: 560px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  /* border-radius: 8px; */
+  overflow: hidden;
+  /* gap: 16px; */
+  /* margin-right: 32px; */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog_card:hover {
+  /* Removed transform to prevent movement of other elements */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.blog_card:last-child {
+  margin-right: 0;
+}
+
+.blog_image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.blog_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog_card:hover .blog_image img {
+  transform: scale(1.05);
+}
+
+.blog_content {
+  width: 100%;
+  height: 200px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.blog_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: SemiBold;
+  line-height: 120%;
+  color: #082544;
+  letter-spacing: 0px;
+  /* margin: 0; */
+}
+
+.blog_description {
+  width: 100%;
+  height: 60px;
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #6b7280;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.read_blog_button {
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #01ba77;
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+}
+
+.read_blog_button:hover {
+  color: #067e52;
+  transform: translateX(4px);
+}
+
+/* Progress Indicator */
+.progress_indicator {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 10px 0;
+}
+
+.progress_bar {
+  width: 24px;
+  height: 8px;
+  background: #e5e7eb;
+  /* border-radius: 3px; */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.progress_bar.active {
+  background: #01ba77;
+  width: 54px;
+  height: 8px;
+}
+
+.progress_bar:hover {
+  background: #01ba77;
+  opacity: 0.7;
+}
+
+.progress_bar:active {
+  transform: scale(0.95);
+}
+
+/* Navigation Dots */
+.carousel_dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 40px;
+  height: 4px;
+  background: #d1d5db;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #01ba77;
+}
+
+.dot:hover {
+  background: #01ba77;
+  opacity: 0.7;
+}
+
+/* Footer Section */
+#footer_section {
+  width: 100vw;
+  height: 400px;
+  transform: rotate(0deg);
+  opacity: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Newsletter Subscription Section */
+.newsletter_section {
+  width: 100%;
+  max-width: 940px;
+  padding: 24px 32px;
+  margin: 0 auto;
+  background: #41cb5a;
+  display: flex;
+  max-height: 120px;
+  position: relative;
+  top: 35px;
+  justify-content: flex-start;
+}
+
+.newsletter_container {
+  width: 100%;
+  max-width: 940px;
+  height: 100%;
+  justify-content: space-between;
+  transform: rotate(0deg);
+  opacity: 1;
+  /* padding: 24px 32px; */
+  display: flex;
+  align-items: center;
+  /* gap: 40px;   */
+}
+
+.newsletter_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter_header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.newsletter_line {
+  width: 32px;
+  height: 2px;
+  background: white;
+}
+
+.newsletter_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: medium;
+  line-height: 16px;
+  color: white;
+  letter-spacing: 0px;
+}
+
+.newsletter_main_title {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: light;
+  color: white;
+  margin: 0;
+  line-height: 120%;
+}
+
+.newsletter_main_title span {
+  font-weight: 700;
+  font-style: bold;
+}
+.newsletter_form {
+  display: flex;
+  width: 409px;
+  height: 48px;
+  align-items: center;
+  /* gap: 12px; */
+}
+
+.email_input {
+  width: 280px;
+  height: 48px;
+  padding: 12px 16px;
+  border: none;
+  /* border-radius: 8px; */
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  color: #082544;
+  background: white;
+}
+
+.email_input::placeholder {
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: regular;
+  opacity: 0.5;
+}
+
+.subscribe_button_footer {
+  width: 345.33px;
+  height: 46px;
+  background: #082544;
+  color: white;
+  border: none;
+  /* border-radius: 8px; */
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Main Footer Content */
+.footer_main {
+  background: #f8f9fa;
+  padding: 80px 0;
+  max-height: 307px;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Left Column - Company Info */
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_logo {
+  width: 162px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer_logo img {
+  width: 162px;
+  height: 56px;
+}
+
+.logo_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.juice_text {
+  color: #082544;
+}
+
+.net_text {
+  color: #01ba77;
+}
+
+.contact_email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.email_icon {
+  font-size: 16px;
+  color: #082544;
+}
+
+.email_address {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #6b7280;
+}
+
+/* Middle Column - Quick Links */
+.footer_center {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_heading {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: SemiBold;
+  line-height: 24px;
+  color: #082544;
+  margin: 0;
+}
+
+.footer_nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer_link {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #082544;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer_link:hover {
+  color: #082544;
+  font-weight: 600;
+}
+
+.footer_link.active {
+  border-bottom: 1px solid #082544;
+  color: #082544;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+/* Right Column - Social Media */
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social_icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social_icons {
+  width: 168px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.social_icon {
+  width: 24px;
+  height: 24px;
+}
+.social_icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Copyright Section */
+.footer_bottom {
+  background: #082544;
+  padding: 18px 0;
+}
+
+.footer_bottom_container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.legal_links {
+  display: flex;
+  gap: 24px;
+}
+
+.legal_link {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* .legal_link:hover {
+  color: #01ba77;
+} */
+
+/* Responsive Styles */
+
+/* ===========================================
+   GLOBAL RESPONSIVE STYLES
+   =========================================== */
+
+/* Ensure full width coverage */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure all main sections cover full width */
+.hero_section,
+#Frame1707482114,
+#about_section,
+#services_section,
+#pricing_section,
+#impact_section,
+#features_section,
+#mobile_app_section,
+#ev_products_section,
+#blogs_section,
+#footer_section {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ===========================================
+   MOBILE NAVIGATION STYLES
+   =========================================== */
+
+/* Mobile Menu Button */
+.mobile_menu_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  gap: 3.5px;
+  padding: 4px;
+  padding-left: 25px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile_menu_button:hover {
+  background-color: #f8f9fa;
+}
+
+/* Mobile Logo Container */
+@media (min-width: 0px) and (max-width: 480px) {
+  .nav_bar {
+    padding-left: 8px;
+    padding-right: 20px;
+  }
+}
+
+.hamburger_line {
+  width: 40px;
+  height: 10px;
+  background: #082544;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.mobile_menu_button.active .hamburger_line:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.mobile_menu_button.active .hamburger_line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile_menu_button.active .hamburger_line:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Mobile Navigation Overlay */
+.mobile_nav_overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.mobile_nav_overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile Navigation Sidebar */
+.mobile_nav_sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 70%;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.mobile_nav_sidebar.active {
+  right: 0;
+}
+
+/* Mobile Navigation Header */
+.mobile_nav_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.mobile_nav_logo_container {
+  width: 162px;
+  height: 56px;
+}
+
+.mobile_nav_logo_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile_nav_logo {
+  width: 162px;
+  height: 56px;
+}
+
+.mobile_nav_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile_nav_close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.mobile_nav_close:hover {
+  color: #082544;
+}
+
+/* Mobile Navigation Separator */
+.mobile_nav_separator {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0 24px;
+}
+
+/* Mobile Navigation Items */
+.mobile_nav_items {
+  padding-bottom: 10px;
+}
+
+.mobile_nav_item {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  text-decoration: none;
+  color: #082544;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.mobile_nav_item:hover {
+  background: #f8f9fa;
+}
+
+.mobile_nav_item.active {
+  background: #01ba77;
+  color: white;
+}
+
+.mobile_nav_icon {
+  font-size: 18px;
+  margin-right: 12px;
+  width: 20px;
+  text-align: center;
+}
+
+.mobile_nav_text {
+  font-family: "Aloevera Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Mobile Navigation Actions */
+.mobile_nav_actions {
+  padding: 19px 30px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile_nav_logout,
+.mobile_nav_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mobile_nav_logout_icon,
+.mobile_nav_cart_icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile phones (0px - 480px) */
+/* Tablets and large phones (481px - 768px) */
+/* Show desktop navigation on larger screens */
+
+/* ===========================================
+   RESPONSIVE BREAKPOINTS
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media screen and (max-width: 480px) {
+  .mobile_menu_button {
+    display: flex;
+    width: 25px;
+    height: 30px;
+  }
+
+  .hamburger_line {
+    width: 25px;
+    height: 2.5px;
+  }
+
+  .mobile_nav_sidebar {
+    width: 260px;
+    right: -260px;
+  }
+
+  .mobile_nav_overlay,
+  .mobile_nav_sidebar {
+    display: block;
+  }
+
+  /* Hide desktop navigation elements on mobile */
+
+  #container_holder,
+  #login_cart_button,
+  .nav_button {
+    display: none;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+}
+
+/* Tablets and large phones (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobile_menu_button {
+    display: flex;
+    width: 22px;
+    height: 22px;
+  }
+
+  .hamburger_line {
+    width: 15px;
+    height: 1.5px;
+  }
+
+  .mobile_nav_sidebar {
+    width: 280px;
+    right: -280px;
+  }
+
+  .mobile_nav_overlay,
+  .mobile_nav_sidebar {
+    display: block;
+  }
+
+  /* Hide desktop navigation elements on tablet */
+  #container_holder,
+  #login_cart_button,
+  .nav_button {
+    display: none;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+}
+
+/* iPad and small laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobile_menu_button {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  .hamburger_line {
+    width: 16px;
+    height: 2px;
+  }
+
+  .mobile_nav_sidebar {
+    width: 300px;
+    right: -300px;
+  }
+
+  .mobile_nav_overlay,
+  .mobile_nav_sidebar {
+    display: block;
+  }
+
+  /* Hide desktop navigation elements on iPad */
+  #container_holder,
+  #login_cart_button,
+  .nav_button {
+    display: none;
+  }
+
+  .nav_container {
+    justify-content: space-between;
+    /* padding: 0 32px; */
+  }
+}
+
+/* Show desktop navigation on larger screens */
+@media screen and (min-width: 1025px) {
+  .mobile_menu_button {
+    display: none;
+  }
+
+  .mobile_nav_overlay,
+  .mobile_nav_sidebar {
+    display: none;
+  }
+
+  #container_holder,
+  #login_cart_button,
+  .nav_button {
+    display: flex;
+  }
+}
+
+/* Large screens (1280px and above) - Fix spacing issues */
+@media screen and (min-width: 1280px) {
+  .nav_bar {
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 24px;
+  }
+
+  .nav_container {
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+
+  #logo_container {
+    width: 162px;
+    flex-shrink: 0;
+  }
+
+  #container_holder {
+    width: 611px;
+    flex-shrink: 0;
+  }
+}
+
+/* ===========================================
+     hero banner section  responsive styles
+   =========================================== */
+
+/* mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Hero Section Mobile Styles - All content within 350px */
+  .hero_section {
+    height: 350px;
+    min-height: 350px;
+  }
+
+  .hero_section_images {
+    height: 350px;
+  }
+
+  .hero_content {
+    padding: 0 20px 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 12px;
+    max-width: 350px;
+    margin: 0;
+  }
+
+  .hero_left {
+    padding-top: 80px;
+    max-width: 550px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    gap: 15px;
+  }
+
+  /* Hero Tagline Mobile */
+  .hero_tagline {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .hero_tagline_line {
+    width: 15px;
+    height: 1px;
+  }
+
+  .hero_tagline_text {
+    font-size: 10px;
+  }
+
+  /* Hero Headline Mobile */
+  .hero_headline {
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: .3px;
+    line-height: 100%;
+    text-align: left;
+  }
+
+  /* Hero CTA Mobile */
+  .hero_cta {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  /* Hero Download Text Mobile */
+  .hero_download_text {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 12px;
+  }
+
+  /* Hero Download Buttons Mobile */
+  .hero_download_buttons {
+    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 350px;
+  }
+
+  .app_store_button {
+    width: 100px;
+    height: 32px;
+  }
+
+  .google_play_button {
+    width: 110px;
+    height: 32px;
+  }
+
+  .download_button_hero img {
+    height: 32px;
+    width: auto;
+  }
+
+  /* Hide Social Media Icons on Mobile */
+  .hero_social_icons {
+    display: none;
+  }
+
+  /* Hero Images Mobile - Fit within 350px */
+  .hero_section_image_left {
+    width: 20%;
+    height: 250px;
+  }
+
+  .hero_section_image_left_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .hero_section_image_right {
+    width: 80%;
+    height: 350px;
+  }
+
+  .hero_section_image_right img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  /* Scroll Icon Mobile */
+  .hero_section .scroll_icon {
+    bottom: 15px;
+    right: 15px;
+    padding: 6px 3px;
+  }
+
+  .hero_section .scroll_icon img {
+    width: 12px;
+  }
+}
+
+/* For tablets (up to 768px wide) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Hero Section Tablet Styles - Optimized for tablet */
+  .hero_section {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .hero_section_images {
+    height: auto;
+  }
+
+  .hero_content {
+    padding: 0 30px 0 30px;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero_left {
+    max-width: 500px;
+    left: 0;
+
+    bottom: 0;
+    gap: 16px;
+    padding-top: 120px;
+  }
+
+  /* Hero Tagline Tablet */
+  .hero_tagline {
+    justify-content: flex-start;
+  }
+
+  .hero_tagline_text {
+    font-size: 11px;
+  }
+
+  /* Hero Headline Tablet */
+  .hero_headline {
+    width: 100%;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: left;
+  }
+
+  /* Hero CTA Tablet */
+  .hero_cta {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  /* Hero Download Text Tablet */
+  .hero_download_text {
+    font-size: 16px;
+    line-height: 145%;
+    margin-bottom: 14px;
+  }
+
+  /* Hero Download Buttons Tablet */
+  .hero_download_buttons {
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+
+  .app_store_button {
+    width: 120px;
+    height: 38px;
+  }
+
+  .google_play_button {
+    width: 130px;
+    height: 38px;
+  }
+
+  .download_button_hero img {
+    height: 38px;
+    width: auto;
+  }
+
+  /* Hide Social Media Icons on Tablet */
+  .hero_social_icons {
+    display: none;
+  }
+
+  /* Hero Images Tablet */
+  .hero_section_image_left {
+    width: 25%;
+    height: 450px;
+  }
+
+  .hero_section_image_left_img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  .hero_section_image_right {
+    width: 75%;
+    height: 450px;
+  }
+
+  .hero_section_image_right img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  /* Scroll Icon Tablet */
+  .hero_section .scroll_icon {
+    bottom: 20px;
+    right: 30px;
+    padding: 8px 4px;
+  }
+
+  .hero_section .scroll_icon img {
+    width: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero_section_image {
+    height: 90vh;
+  }
+  .hero_section_image_right {
+    height: 100%;
+  }
+  .hero_section_image_right img {
+    height: 100%;
+  }
+  .hero_section_image_left {
+    height: 100%;
+  }
+  .hero_section_image_left img {
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .hero_social_icons {
+    display: none;
+  }
+}
+
+/* ===========================================
+   ABOUT SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* About Section Mobile Styles */
+  #about_section {
+    height: auto;
+    padding: 40px 22px;
+  }
+
+  .about_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+    align-items: flex-start;
+  }
+
+  .about_image {
+    width: 100%;
+    height: 330px;
+    order: 2;
+  }
+
+  .about_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .about_content {
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    order: 1;
+  }
+
+  .about_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .about_line {
+    width: 28px;
+    height: 2px;
+margin-bottom: 5px;
+  }
+  .about_title {
+    font-size: 16px;
+    height: auto;
+    font-weight: 500;
+    width: auto;
+  }
+
+  .about_headline {
+    font-size: 24px;
+    height: auto;
+    width: 100%;
+    line-height: 110%;
+  }
+
+  .about_description {
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .features_grid_about {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature_box {
+    padding: 10px;
+    min-width: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #6eae2f;
+    transition: all 0.3s ease;
+  }
+
+  .feature_box:hover {
+    border: 2px solid #01ba77;
+  }
+
+  .feature_icon_about {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .feature_icon_about img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feature_text_about {
+    font-size: 12px;
+    width: 60%;
+    line-height: 130%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* About Section Tablet Styles */
+  #about_section {
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .about_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .about_image {
+    width: 100%;
+    height: 325px;
+    order: 2;
+  }
+
+  .about_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about_content {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    order: 1;
+  }
+
+  .about_header {
+
+    gap: 14px;
+  }
+
+  .about_line {
+    width: 28px;
+    height: 2px;
+margin-bottom: 5px;
+  }
+
+  .about_title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    font-style: normal;
+    height: auto;
+    width: auto;
+  }
+
+  .about_headline {
+    font-size: 32px;
+    height: auto;
+    width: 100%;
+    line-height: 115%;
+    text-align: left;
+  }
+
+  .about_description {
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    line-height: 135%;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .features_grid_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .feature_box:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 300px;
+  }
+
+  .feature_box {
+    /* background: transparent; */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+    width: 100%;
+    border: 1px solid #6eae2f;
+    transition: all 0.3s ease;
+  }
+
+  .feature_box:hover {
+    border: 2px solid #01ba77;
+  }
+
+  .feature_icon_about {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature_icon_about img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .feature_text_about {
+    font-size: 12px;
+    width: 100%;
+    line-height: 130%;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about_section {
+    height: auto;
+    padding: 40px 30px;
+  }
+  .about_container {
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about_image {
+    width: 50%;
+    height: 500px;
+    order: 1;
+  }
+
+  .about_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .about_content {
+    width: 50%;
+    height: 470px;
+    /* max-width: 500px; */
+    margin: 0;
+    gap: 20px;
+    /* gap: 20px; */
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .about_header {
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .about_title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .about_headline {
+    font-size: 28px;
+    width: 100%;
+    height: auto;
+    line-height: 120%;
+    margin: 0;
+  }
+
+  .about_description {
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    line-height: 140%;
+    margin: 0;
+  }
+
+  .features_grid_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+  }
+
+  .feature_box:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 300px;
+  }
+
+  .feature_box {
+    /* background: transparent; */
+    padding: 7px;
+    height: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    /* gap: 12px; */
+    min-height: auto;
+  }
+
+  .feature_icon_about {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .feature_icon_about img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .feature_text_about {
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    width: 75%;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+/* ===========================================
+   STACK FRAME RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Stack Frame Mobile Styles - 2x2 Grid */
+  #Frame1707482114 {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .stack {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+
+  #stack_text {
+    font-size: 25px;
+    text-align: center;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #stack_text span {
+    /* font-size: 25px; */
+    text-align: center;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #stack_frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    row-gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .stack_frame_item {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    gap: 2px;
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .stack_frame_text_up {
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .stack_text_down {
+    font-size: 17px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 120%;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Stack Frame Tablet Styles - 2x2 Grid */
+  #Frame1707482114 {
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .stack {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #stack_text span {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #stack_text {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #stack_frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+  }
+
+  .stack_frame_item {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    gap: 12px;
+    border-bottom: 2px solid #d1d5db;
+  }
+
+  .stack_frame_text_up {
+    font-size: 32px;
+    height: auto;
+    width: 100%;
+  }
+
+  .stack_text_down {
+    font-size: 12px;
+    height: auto;
+    width: 100%;
+    line-height: 120%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #Frame1707482114 {
+    height: auto;
+    padding: 40px 30px;
+  }
+  #stack_frame {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===========================================
+   SERVICES SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Services Section Mobile Styles */
+  #services_section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .services_container {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+
+  .services_header {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .services_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .services_title {
+    font-size: 12px;
+    height: auto;
+    width: auto;
+  }
+
+  .services_headline {
+    font-size: 24px;
+    height: auto;
+    width: 100%;
+    line-height: 110%;
+    text-align: center;
+  }
+
+  .services_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .service_card {
+    padding: 14px 9px;
+    align-items: center;
+    text-align: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service_icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
+
+  .service_icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .service_title {
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .service_description {
+    font-size: 10px;
+    line-height: 130%;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .service_link {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+/* Tablets and iPad (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Services Section Tablet Styles */
+  #services_section {
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .services_container {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+
+  .services_header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .services_line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .services_title {
+    font-size: 14px;
+    height: auto;
+    width: auto;
+  }
+
+  .services_headline {
+    font-size: 32px;
+    height: auto;
+    width: 100%;
+    line-height: 115%;
+    text-align: center;
+  }
+
+  .services_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .service_card {
+    padding: 20px 16px;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service_icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .service_icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service_title {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .service_description {
+    font-size: 12px;
+    line-height: 135%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .service_link {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* iPad Pro and larger tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Services Section iPad Styles */
+  #services_section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .services_container {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+  }
+
+  .services_header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .services_line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .services_title {
+    font-size: 15px;
+    height: auto;
+    width: auto;
+  }
+
+  .services_headline {
+    font-size: 40px;
+    height: auto;
+    width: 100%;
+    line-height: 115%;
+    text-align: center;
+  }
+
+  .services_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 22px;
+    width: 100%;
+    height: auto;
+  }
+
+  .service_card {
+    padding: 24px 18px;
+    align-items: center;
+    text-align: center;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service_icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+  }
+
+  .service_icon img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .service_title {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .service_description {
+    font-size: 14px;
+    line-height: 135%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .service_link {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* ===========================================
+   PRICING SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Pricing Section Mobile Styles */
+  #pricing_section {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .pricing_container {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .pricing_header {
+    justify-content: center;
+    /* gap: 8px; */
+  }
+
+  .pricing_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .pricing_title {
+    font-size: 12px;
+    height: auto;
+    width: auto;
+  }
+
+  .pricing_headline {
+    font-size: 24px;
+    height: auto;
+    width: 100%;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .pricing_cards {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing_card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .guest_card {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .host_card {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .card_content {
+    padding: 20px;
+  }
+
+  .card_title {
+    font-size: 15px;
+    line-height: 120%;
+    margin-bottom: 8px;
+  }
+
+  .card_price {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .card_price span {
+    font-size: 28px;
+  }
+
+  .card_divider {
+    margin-bottom: 15px;
+  }
+
+  .features_title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .feature_item {
+    font-size: 13px;
+    margin-bottom: 12px;
+    gap: 6px;
+  }
+
+  .checkmark img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .subscribe_button {
+    height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Tablets and iPad (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Pricing Section Tablet Styles */
+  #pricing_section {
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .pricing_container {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+
+  .pricing_header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .pricing_line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .pricing_title {
+    font-size: 14px;
+    height: auto;
+    width: auto;
+  }
+
+  .pricing_headline {
+    font-size: 32px;
+    height: auto;
+    width: 100%;
+    line-height: 115%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .pricing_cards {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing_card {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    padding: 25px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .guest_card {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .host_card {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .card_content {
+    padding: 25px;
+    gap: 18px;
+  }
+
+  .card_title {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  .card_price {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .card_price span {
+    font-size: 36px;
+  }
+
+  .card_divider {
+    margin-bottom: 18px;
+  }
+
+  .features_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .feature_item {
+    font-size: 14px;
+    margin-bottom: 14px;
+    gap: 10px;
+  }
+
+  .checkmark img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .subscribe_button {
+    height: 44px;
+    font-size: 15px;
+  }
+}
+
+/* iPad Pro and larger tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Pricing Section iPad Styles */
+  #pricing_section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .pricing_container {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+
+  .pricing_header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .pricing_line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .pricing_title {
+    font-size: 15px;
+    height: auto;
+    width: auto;
+  }
+
+  .pricing_headline {
+    font-size: 40px;
+    height: auto;
+    width: 100%;
+    line-height: 115%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .pricing_cards {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing_card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 30px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .guest_card {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .host_card {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0;
+    transform: none;
+  }
+
+  .card_content {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .card_title {
+    font-size: 22px;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+
+  .card_price {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .card_price span {
+    font-size: 42px;
+  }
+
+  .card_divider {
+    margin-bottom: 20px;
+  }
+
+  .features_title {
+    font-size: 19px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .feature_item {
+    font-size: 15px;
+    margin-bottom: 16px;
+    gap: 12px;
+  }
+
+  .checkmark img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .subscribe_button {
+    height: 46px;
+    font-size: 16px;
+  }
+}
+
+/* ===========================================
+   IMPACT SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Impact Section Mobile Styles */
+  #impact_section {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .impact_container {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact_title_section {
+    width: 100%;
+    height: auto;
+    /* gap: 15px; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .impact_header {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .impact_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .impact_title {
+    font-family: "Aloevera Display", sans-serif;
+    font-size: 12px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .impact_headline {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .impact_content_section {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+    padding: 0 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .impact_description {
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .impact_stats {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .stat_box {
+    width: 50%;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat_number {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .stat_text {
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+  }
+}
+
+/* Tablets and iPad (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Impact Section Tablet Styles */
+  #impact_section {
+    height: auto;
+    padding: 30px 30px;
+  }
+
+  .impact_container {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact_title_section {
+    width: 100%;
+    height: auto;
+    gap: 18px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .impact_header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .impact_line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .impact_title {
+    font-family: "Aloevera Display", sans-serif;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .impact_headline {
+    font-size: 32px;
+    line-height: 115%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .impact_content_section {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .impact_description {
+    font-size: 14px;
+    line-height: 135%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .impact_stats {
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stat_box {
+    flex: 1;
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat_number {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .stat_text {
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+  }
+}
+
+/* iPad Pro and larger tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Impact Section iPad Styles */
+  #impact_section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .impact_container {
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact_title_section {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .impact_header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .impact_line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .impact_title {
+    font-family: "Aloevera Display", sans-serif;
+    font-size: 15px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .impact_headline {
+    font-size: 40px;
+    line-height: 115%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .impact_content_section {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .impact_description {
+    font-size: 15px;
+    line-height: 135%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .impact_stats {
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stat_box {
+    flex: 1;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stat_number {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+
+  .stat_text {
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
+  }
+}
+
+/* 1024px and above */
+
+/* ===========================================
+   FEATURES SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Features Section Mobile Styles */
+  #features_section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .features_container {
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+  }
+
+  .features_header {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .features_header_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .features_header_title {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .features_main_title {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .features_content {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .features_center_image {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    z-index: 1;
+    order: 1;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .features_center_image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: contain;
+  }
+
+  .features_grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    background: none;
+    padding: 0;
+    order: 2;
+  }
+
+  /* First row: 2 cards */
+  .features_grid .top_left {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features_grid .top_right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Second row: 2 cards */
+  .features_grid .bottom_left {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    background: none;
+
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .features_grid .bottom_right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .feature_card {
+    padding: 16px 12px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feature_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+
+  .feature_icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .feature_card_title {
+    font-size: 15px;
+    line-height: 120%;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .feature_card_description {
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
+
+/* Tablets and iPad (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Features Section Tablet Styles */
+  #features_section {
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .features_container {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+
+  .features_header {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .features_header_line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .features_header_title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .features_main_title {
+    font-size: 32px;
+    line-height: 115%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .features_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .features_center_image {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    z-index: 1;
+    order: 1;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .features_center_image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: contain;
+  }
+
+  .features_grid {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 25px;
+    padding: 0;
+    order: 2;
+  }
+
+  /* First row: 2 cards */
+  .features_grid .top_left {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features_grid .top_right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Second row: 2 cards */
+  .features_grid .bottom_left {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    background: none;
+    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .features_grid .bottom_right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .feature_card {
+    padding: 20px 16px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feature_icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+
+  .feature_icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature_card_title {
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .feature_card_description {
+    font-size: 12px;
+    line-height: 135%;
+    text-align: center;
+  }
+}
+
+/* iPad Pro and larger tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Features Section iPad Styles */
+  #features_section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .features_container {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+  }
+
+  .features_header {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .features_header_line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .features_header_title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .features_main_title {
+    font-size: 40px;
+    line-height: 115%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .features_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0;
+  }
+
+  .features_center_image {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    z-index: 1;
+    order: 1;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .features_center_image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: contain;
+  }
+
+  .features_grid {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    padding: 0;
+    order: 2;
+  }
+
+  /* First row: 2 cards */
+  .features_grid .top_left {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features_grid .top_right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Second row: 2 cards */
+  .features_grid .bottom_left {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .features_grid .bottom_right {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .feature_card {
+    padding: 24px 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feature_icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 18px;
+  }
+
+  .feature_icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature_card_title {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .feature_card_description {
+    font-size: 14px;
+    line-height: 135%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .feature_card {
+    background: transparent;
+  }
+  .features_center_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+/* ===========================================
+   MOBILE APP SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* Mobile App Section Mobile Styles */
+  #mobile_app_section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .mobile_app_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* Hide mobile app images on phone */
+  .mobile_app_images {
+    display: none;
+  }
+
+  /* Center mobile app content */
+  .mobile_app_content {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile_app_header {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .mobile_app_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .mobile_app_title {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .mobile_app_main_title {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .mobile_app_description {
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .mobile_app_features {
+    gap: 15px;
+    align-items: center;
+  }
+
+  .feature_item {
+    gap: 8px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .feature_checkmark {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+  }
+
+  .feature_text {
+    font-size: 13px;
+    line-height: 130%;
+  }
+
+  .download_buttons {
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .download_button_feature img {
+    width: 120px;
+    height: 40px;
+    object-fit: contain;
+  }
+}
+
+/* Tablets and iPad (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Mobile App Section Tablet Styles */
+  #mobile_app_section {
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .mobile_app_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  /* Show mobile app images on tablet but smaller */
+  .mobile_app_images {
+    /* display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    z-index: 1; */
+    display: none;
+  }
+
+  .mobile_app_images img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: contain;
+  }
+
+  /* Center mobile app content */
+  .mobile_app_content {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile_app_header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .mobile_app_line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .mobile_app_title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .mobile_app_main_title {
+    font-size: 32px;
+    line-height: 115%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .mobile_app_description {
+    font-size: 14px;
+    line-height: 135%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .mobile_app_features {
+    gap: 18px;
+    align-items: left;
+  }
+
+  .feature_item {
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .feature_checkmark {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+  }
+
+  .feature_text {
+    font-size: 13px;
+    line-height: 135%;
+  }
+
+  .download_buttons {
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .download_button_feature img {
+    width: 140px;
+    height: 45px;
+    object-fit: contain;
+  }
+}
+
+/* iPad Pro and larger tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Mobile App Section iPad Styles */
+  #mobile_app_section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .mobile_app_container {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  /* Show mobile app images on iPad */
+  .mobile_app_images {
+    display: block;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    background-image: none;
+  }
+
+  .mobile_app_images img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: contain;
+  }
+
+  /* Mobile app content on iPad */
+  .mobile_app_content {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    /* gap: 30px; */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mobile_app_header {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .mobile_app_line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .mobile_app_title {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .mobile_app_main_title {
+    font-size: 40px;
+    line-height: 115%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .mobile_app_description {
+    font-size: 15px;
+    line-height: 135%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .mobile_app_features {
+    /* gap: 20px; */
+    align-items: flex-start;
+  }
+
+  .feature_item {
+    gap: 12px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .feature_checkmark {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+
+  .feature_text {
+    font-size: 14px;
+    line-height: 135%;
+  }
+
+  .download_buttons {
+    gap: 18px;
+    /* justify-content: flex-start;
+    flex-wrap: wrap; */
+    margin-top: 30px;
+  }
+
+  .download_button_feature img {
+    width: 160px;
+    height: 50px;
+    object-fit: contain;
+  }
+}
+
+/* 1024px and above */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #mobile_app_section {
+    padding: 30px 10px;
+  }
+
+  .mobile_app_container {
+    padding: 30px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+
+  .mobile_app_images {
+    display: block;
+  }
+  .download_buttons {
+    gap: 18px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===========================================
+   EV PRODUCTS SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  /* EV Products Section Mobile Styles */
+  #ev_products_section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .ev_products_container {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+
+  .ev_products_header {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ev_products_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .ev_products_title {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ev_products_content {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+
+  .ev_products_text_section {
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .ev_products_main_title {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ev_products_subtitle {
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .ev_products_cards {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .product_card {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .product_image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product_price {
+    gap: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .current_price {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .price_divider {
+    width: 100%;
+    height: auto;
+    gap: 8px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .original_price {
+    font-size: 14px;
+    line-height: 120%;
+    width: auto;
+    height: auto;
+  }
+
+  .discount {
+    font-size: 14px;
+    line-height: 120%;
+    width: auto;
+  }
+
+  .product_name_description {
+    gap: 8px;
+  }
+
+  .product_name {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .product_description {
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .product_button {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+/* Tablets and iPad (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* EV Products Section Tablet Styles */
+  #ev_products_section {
+    height: auto;
+    padding: 50px 30px;
+  }
+
+  .ev_products_container {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+
+  .ev_products_header {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .ev_products_line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .ev_products_title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ev_products_content {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+  }
+
+  .ev_products_text_section {
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .ev_products_main_title {
+    font-size: 32px;
+    line-height: 115%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ev_products_subtitle {
+    font-size: 14px;
+    line-height: 135%;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .ev_products_cards {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .product_card {
+    width: 100%;
+    max-width: 450px;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .product_image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product_price {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .current_price {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .price_divider {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .original_price {
+    font-size: 16px;
+    line-height: 120%;
+    width: auto;
+    height: auto;
+  }
+
+  .discount {
+    font-size: 16px;
+    line-height: 120%;
+    width: auto;
+  }
+
+  .product_name_description {
+    gap: 10px;
+  }
+
+  .product_name {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .product_description {
+    font-size: 14px;
+    line-height: 135%;
+  }
+
+  .product_button {
+    height: 44px;
+    font-size: 13px;
+  }
+}
+
+/* iPad Pro and larger tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* EV Products Section iPad Styles */
+  #ev_products_section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .ev_products_container {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+  }
+
+  .ev_products_header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .ev_products_line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .ev_products_title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .ev_products_content {
+    width: 100%;
+    height: auto;
+    gap: 35px;
+  }
+
+  .ev_products_text_section {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .ev_products_main_title {
+    font-size: 40px;
+    line-height: 115%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ev_products_subtitle {
+    font-size: 15px;
+    line-height: 135%;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .ev_products_cards {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .product_card {
+    width: 100%;
+    max-width: 500px;
+    padding: 28px;
+    gap: 28px;
+  }
+
+  .product_image {
+    width: 100%;
+    height: 350px;
+  }
+
+  .product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product_price {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .current_price {
+    font-size: 26px;
+    line-height: 120%;
+  }
+
+  .price_divider {
+    width: 100%;
+    height: auto;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .original_price {
+    font-size: 18px;
+    line-height: 120%;
+    width: auto;
+    height: auto;
+  }
+
+  .discount {
+    font-size: 18px;
+    line-height: 120%;
+    width: auto;
+  }
+
+  .product_name_description {
+    gap: 12px;
+  }
+
+  .product_name {
+    font-size: 19px;
+    line-height: 120%;
+  }
+
+  .product_description {
+    font-size: 15px;
+    line-height: 135%;
+  }
+
+  .product_button {
+    height: 46px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+#products_section{
+  height: 700px;
+}
+.ev_products_container{
+  gap: 15px;
+}
+.ev_products_cards{
+  gap: 8px;
+  
+}
+.product_card{
+  padding: 15px;
+  max-width: 400px;
+  gap: 15px;
+  max-height: 600px;
+}
+.product_image{
+  width: 100%;
+  height: 300px;
+}
+
+.product_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+}
+
+/* ===========================================
+   BLOGS SECTION RESPONSIVE STYLES
+   =========================================== */
+
+/* Mobile phones (0px - 480px) */
+@media (min-width: 0px) and (max-width: 480px) {
+  .ev_products_line{
+    width: 24px;
+    height: 1px;
+  }
+
+.ev_products_title{
+  font-size: 15px;
+  text-align: center;
+}
+
+  /* Blogs Section Mobile Styles */
+  #blogs_section {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .blogs_container {
+    width: 100%;
+    height: auto;
+    gap: 25px;
+  }
+
+  .blogs_header_section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .blogs_header_left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .blogs_header {
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .blogs_line {
+    width: 24px;
+    height: 1px;
+  }
+
+  .blogs_title {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .blogs_main_title {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .blogs_header_right {
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .view_all_button {
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .blogs_carousel_section {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .carousel_container {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel_track {
+    width: calc(100%); /* 5 cards total */
+    height: auto;
+    gap: 0;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    transform: translateX(0);
+  }
+
+  /* Mobile: Show only one card at a time */
+  .blog_card {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 500px;
+    margin: 0;
+    flex-shrink: 0;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog_image {
+    width: 100%;
+    height: 250px;
+    flex-shrink: 0;
+  }
+
+  .blog_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog_content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .blog_title {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  .blog_description {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 140%;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .read_blog_button {
+    font-size: 14px;
+    padding: 8px 0;
+    align-self: flex-start;
+  }
+
+  .progress_indicator {
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px;
+    padding: 8px 0;
+  }
+
+  .progress_bar {
+    width: 20px;
+    height: 6px;
+  }
+
+  .progress_bar.active {
+    width: 40px;
+    height: 6px;
+  }
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #blogs_section {
+    height: 700px;
+    width: auto;
+    padding: 40px 60px;
+  }
+  
+  .blogs_container {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    gap: 30px;
+  }
+  
+  .blogs_header_section {
+    width: 100%;
+    height: 80px;
+    gap: 20px;
+  }
+  
+  .blogs_main_title {
+    font-size: 42px;
+  }
+  
+  .blogs_carousel_section {
+    width: 100%;
+    height: 580px;
+    gap: 24px;
+  }
+  
+  .carousel_container {
+    gap: 5px;
+  }
+  
+  .blog_card {
+    min-width: 400px;
+    height: 560px;
+  }
+  .carousel_wrapper{
+    height: 560px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog_card{
+    height: 500px;
+    width: 100%;
+    max-width: 380px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog_card{
+    height: 500px;
+    width: 100%;
+    max-width: 380px;
+  }
+  .carousel_wrapper{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+  /* ===========================================
+   FOOTER SECTION RESPONSIVE STYLES
+   =========================================== */
+
+  /* Mobile Footer Styles (0px - 480px) */
+  @media (min-width: 0px) and (max-width: 480px) {
+    /* Footer Section */
+    #footer_section {
+      height: auto;
+      padding: 0;
+      width: 100%;
+
+    }
+
+    /* Newsletter Section Mobile */
+    .newsletter_section {
+      width: 90%;
+      margin-left: 0;
+      height: auto;
+      min-height: 200px;
+      padding: 30px 20px;
+      background: #41cb5a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5%;
+    }
+
+    .newsletter_container {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .newsletter_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .newsletter_header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .newsletter_line {
+      width: 24px;
+      height: 2px;
+      background: white;
+    }
+
+    .newsletter_title {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .newsletter_main_title {
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+    }
+
+    .newsletter_form {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .email_input {
+      width: 100%;
+      height: 44px;
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+
+    .subscribe_button_footer {
+      width: 100%;
+      height: 44px;
+      font-size: 14px;
+      padding: 12px 24px;
+    }
+
+    /* Footer Main Mobile */
+    .footer_main {
+      padding: 40px 20px;
+      background: #f8f9fa;
+      overflow: visible;
+      min-height: 450px
+    }
+
+    .footer_container {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: auto;
+      align-items: center;
+      text-align: center;
+      overflow: visible;
+    }
+
+    /* Footer Left Mobile */
+    .footer_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer_logo {
+      width: 120px;
+      height: 40px;
+    }
+
+    .footer_logo img {
+      width: 120px;
+      height: 40px;
+    }
+
+    .contact_email {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .email_icon {
+      font-size: 14px;
+    }
+
+    .email_address {
+      font-size: 14px;
+    }
+
+    /* Footer Center Mobile (Quick Links) */
+    .footer_center {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .footer_heading {
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .footer_nav {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      column-gap: 70px;
+      justify-items: start;
+      justify-content: space-between;
+      width: 100%;
+      /* padding-left: 20px; */
+      margin-left: 20%;
+    }
+
+    .footer_link {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* Footer Right Mobile (Follow Us) */
+    .footer_right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .social_icons {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social_icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social_icon img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Footer Bottom Mobile */
+    .footer_bottom {
+      padding: 16px 20px;
+    }
+
+    .footer_bottom_container {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+
+    .legal_links {
+      display: flex;
+
+      gap: 30px;
+
+      justify-content: center;
+    }
+
+    .legal_link {
+      font-size: 12px;
+    }
+  }
+
+  /* Tablet Footer Styles (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Footer Section */
+    #footer_section {
+      height: auto;
+      padding: 0;
+    }
+
+    /* Newsletter Section Tablet */
+    .newsletter_section {
+      width: 90%;
+      margin-left: 0;
+      height: auto;
+      min-height: 200px;
+      margin-left: 5%;
+      background: #41cb5a;
+      display: flex;
+      padding: 30px 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .newsletter_container {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      padding: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .newsletter_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .newsletter_header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .newsletter_line {
+      width: 28px;
+      height: 2px;
+      background: white;
+    }
+
+    .newsletter_title {
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    .newsletter_main_title {
+      font-size: 28px;
+      line-height: 120%;
+      text-align: center;
+    }
+
+    .newsletter_form {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .email_input {
+      width: 100%;
+      height: 46px;
+      padding: 12px 16px;
+      font-size: 15px;
+    }
+
+    .subscribe_button_footer {
+      width: 100%;
+      height: 46px;
+      font-size: 15px;
+      padding: 12px 24px;
+    }
+
+    /* Footer Main Tablet */
+    .footer_main {
+      padding: 50px 30px;
+      background: #f8f9fa;
+      min-height: 470px;
+    }
+
+    .footer_container {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Footer Left Tablet */
+    .footer_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer_logo {
+      width: 140px;
+      height: 48px;
+    }
+
+    .footer_logo img {
+      width: 140px;
+      height: 48px;
+    }
+
+    .contact_email {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .email_icon {
+      font-size: 15px;
+    }
+
+    .email_address {
+      font-size: 15px;
+    }
+
+    /* Footer Center Tablet (Quick Links) */
+    .footer_center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .footer_heading {
+      font-size: 22px;
+      line-height: 22px;
+      text-align: left;
+    }
+
+    .footer_nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      column-gap: 5px;
+      justify-items: start;
+      width: 100%;
+    }
+
+    .footer_link {
+      font-size: 15px;
+      text-align: left;
+    }
+
+    /* Footer Right Tablet (Follow Us) */
+    .footer_right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .social_icons {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .social_icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .social_icon img {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Footer Bottom Tablet */
+    .footer_bottom {
+      padding: 18px 30px;
+    }
+
+    .footer_bottom_container {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 13px;
+    }
+
+    .legal_links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .legal_link {
+      font-size: 13px;
+    }
+  }
+
+  
+  
+  /* Tablets and iPad (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Blogs Section Tablet Styles */
+    #blogs_section {
+      height: auto;
+      padding: 10px 30px;
+    }
+
+    .blogs_container {
+      width: 100%;
+      height: auto;
+      gap: 30px;
+    }
+
+    .blogs_header_section {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .blogs_header_left {
+      align-items: center;
+      text-align: center;
+    }
+
+    .blogs_header {
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .blogs_line {
+      width: 28px;
+      height: 2px;
+    }
+
+    .blogs_title {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .blogs_main_title {
+      font-size: 32px;
+      line-height: 115%;
+      text-align: center;
+      margin: 0;
+    }
+
+    .blogs_header_right {
+      padding-top: 0;
+      align-items: center;
+    }
+
+    .view_all_button {
+      width: 110px;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    .blogs_carousel_section {
+      width: 100%;
+      height: auto;
+      gap: 25px;
+    }
+
+    .carousel_container {
+      width: 100%;
+      height: auto;
+      gap: 25px;
+    }
+
+    .carousel_wrapper {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .carousel_track {
+      width: 100%;
+      height: auto;
+      gap: 20px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Tablet: Show 2 cards at a time */
+    .blog_card {
+      min-width: calc(50% - 10px);
+      width: calc(50% - 10px);
+      max-width: 400px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .blog_image {
+      width: 100%;
+      height: 250px;
+    }
+
+    .blog_image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .blog_content {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      gap: 12px;
+    }
+
+    .blog_title {
+      font-size: 18px;
+      line-height: 120%;
+    }
+
+    .blog_description {
+      width: 100%;
+      height: auto;
+      font-size: 13px;
+      line-height: 135%;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    }
+
+    .read_blog_button {
+      font-size: 13px;
+      padding: 8px 0;
+    }
+
+    .progress_indicator {
+      justify-content: center;
+      gap: 8px;
+      margin-top: 25px;
+      padding: 10px 0;
+    }
+
+    .progress_bar {
+      width: 22px;
+      height: 6px;
+    }
+
+    .progress_bar.active {
+      width: 45px;
+      height: 6px;
+    }
+  }
+
+  /* iPad Pro and larger tablets (769px - 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Blogs Section iPad Styles */
+    #blogs_section {
+      height: auto;
+      padding: 60px 40px;
+    }
+
+    .blogs_container {
+      width: 100%;
+      height: auto;
+      gap: 35px;
+    }
+
+    .blogs_header_section {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    .blogs_header_left {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .blogs_header {
+      justify-content: flex-start;
+      gap: 12px;
+    }
+
+    .blogs_line {
+      width: 30px;
+      height: 2px;
+    }
+
+    .blogs_title {
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .blogs_main_title {
+      font-size: 40px;
+      line-height: 115%;
+      text-align: left;
+      margin: 0;
+    }
+
+    .blogs_header_right {
+      padding-top: 0;
+      align-items: center;
+    }
+
+    .view_all_button {
+      width: 113px;
+      height: 42px;
+      font-size: 15px;
+    }
+
+    .blogs_carousel_section {
+      width: 100%;
+      height: auto;
+      gap: 30px;
+    }
+
+    .carousel_container {
+      width: 100%;
+      height: auto;
+      gap: 30px;
+    }
+
+    .carousel_wrapper {
+      width: 100%;
+      height: auto;
+      /* overflow: hidden; */
+    }
+
+    .carousel_track {
+      width: 100%;
+      height: auto;
+      gap: 25px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* iPad: Show 2 cards at a time */
+    .blog_card {
+      min-width: calc(50% - 12.5px);
+      width: calc(50% - 12.5px);
+      max-width: 450px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .blog_image {
+      width: 100%;
+      height: 300px;
+    }
+
+    .blog_image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .blog_content {
+      width: 100%;
+      height: auto;
+      padding: 24px;
+      gap: 12px;
+    }
+
+    .blog_title {
+      font-size: 20px;
+      line-height: 120%;
+    }
+
+    .blog_description {
+      width: 100%;
+      height: auto;
+      font-size: 14px;
+      line-height: 135%;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    }
+
+    .read_blog_button {
+      font-size: 14px;
+      padding: 8px 0;
+    }
+
+    .progress_indicator {
+      justify-content: center;
+      gap: 8px;
+      margin-top: 30px;
+      padding: 10px 0;
+    }
+
+    .progress_bar {
+      width: 24px;
+      height: 8px;
+    }
+
+    .progress_bar.active {
+      width: 50px;
+      height: 8px;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1700px) {
+  .carousel_wrapper {
+    height: auto;
+    width: 100%;
+  }
+  .blogs_header_section {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .carousel_wrapper {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog_card {
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    max-width: 400px;
+  }
+  /* .blog_image{
+    height: 300px;
+  } */
+  .blog_content {
+    /* Add styles here if needed */
+  }
+}
